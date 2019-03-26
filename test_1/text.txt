@@ -1,0 +1,61 @@
+<?php while ($rowstatus = $resultstatus->fetch_assoc()){ ?>
+                            <li>
+                            <div class="collapsible-header"><span>Atendido por: <?php echo $rowstatus["atendido_status"] ?>
+                            <span class="date secondary-content">on <?php echo $rowstatus["fecha_status"] ?>
+                            </span></div>
+
+                            <div class="collapsible-body"><span>   
+                            <?php  echo $rowstatus["notes_status"]?>
+                                        </p>    
+                                    
+                                        <i class="material-icons blue-text">edit</i> 
+                                        
+                            </span></div>
+                            </li>
+                            <?php } ?>
+
+
+
+
+
+                            http://localhost:8888/phpmyadmin/index.php?token=513005fbd2c1220756fe1179317348ff
+
+
+
+
+                                       
+<!-- //////////////////////////////////////////  Status colapsable //////////////////////////////////////////  -->
+
+
+<ul class="collapsible">
+
+<?php while ($rowstatus = $resultstatus->fetch_assoc()){ ?>
+    <li>
+
+    <!-- Top collapsible status part -->
+       <div class="collapsible-header">
+
+      <!-- <div class="collapsible-header"> -->
+
+      <span class="title">Atendido por: <?php echo $rowstatus["atendido_status"] ?> </span>
+      <p class="grey-text"></p>
+     
+      
+                            <!-- Opposite side of the top  -->
+                            <a href="" class="secondary-content"><?php echo $rowstatus["fecha_status"] ?>
+                                </a></li>
+                       
+
+
+                <!-- bottom collapsible status part -->
+            
+                <div class="collapsible-body"><span>
+                <?php  echo $rowstatus["notes_status"]?>
+                <i class="material-icons blue-text">edit</i>
+                </span></div>
+                    </li>
+    
+    <?php } ?>
+  </ul>
+
+</div>

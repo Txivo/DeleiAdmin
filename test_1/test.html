@@ -1,0 +1,811 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script src="scripts/auth.js"></script>
+  <script src="scripts/index.js"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+
+
+  <title>index</title>
+<style>
+
+    /* desktop image background size */
+        header {
+
+            background: url(images/brickoffice3.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 500px;
+        }
+
+        nav .badge {
+
+position: relative;
+right: 34px;
+
+}
+
+/* padding in the section section */
+.section {
+padding-top: 4vw;
+padding-bottom: 4vw;
+}
+
+/* Color of bottom tabs */
+.tabs .indicator{
+background-color: #1a237e;
+}
+
+/* transperancy on the tabs */
+.tabs .tabs a:focus, .tabs .tabs a:focus.active{
+background: transparent;
+} 
+
+/* mobile devices image background size */
+@media screen and (max-width:670px) {
+header {
+    min-height: 500px;
+}
+}
+
+  /* {
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+} */
+#content {
+    height: 100%;
+}
+#left {
+    float: left;
+    width: 50%;
+    background:white;
+    height: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 0.4em;
+}
+#right {
+    float: left;
+    width: 50%;
+    background: rgb(231, 231, 238);
+    height: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 0.4em;
+}
+</style>
+</head>
+
+<body class="grey lighten-3">
+<!-- <body> -->
+    
+<!-- //////////////////////////////////////// NAVBAR ////////////////////////////////////////////// -->
+
+  <!-- NAVBAR -->
+  <nav class="z-depth-0 grey lighten-4">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">
+          <img src="./images/topbg.png" style="width: 400px; margin-top: 10px;" />
+        </a>
+  
+  
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+  
+          <li class="logged-in" style="display: none;">
+            <a href="#" class="grey-text modal-trigger" data-target="modal-home"></a>
+          </li>
+  
+          <li class="logged-in">
+                  <a href="speech.php" class="grey-text" id="navbar" >Speech</a>
+                </li>
+  
+                <li class="logged-in">
+                      <a href="solapp.php" class="grey-text" id="solapp">Solicitud de apoyo</a>
+                    </li>
+
+
+                    <li class="logged-in " style="display: none;">
+                            <a href="#" class="grey-text" id="logout">Cerrar Sesión</a>
+                          </li>
+                  
+                          <li class="logged-out" style="display: none;">
+                            <a href="#" class="grey-text modal-trigger" data-target="modal-login">Iniciar Sesión</a>
+                          </li>
+                  
+                          <li class="logged-out" style="display: none;">
+                            <a href="#" class="grey-text modal-trigger" data-target="modal-signup">Registrarse</a>
+                          </li>
+                  
+                        </ul>
+                      </div>
+                    </nav>
+
+
+<!-- -----------------------------------------------------Navbar test_1 Version^^^ -------------------------------------------------------- -->
+
+
+          <!-- <body >
+              <header> -->
+          <!-- transperant navbar -->
+          <!-- <nav class="nav-wrapper transparent"> -->
+
+           <!-- container below if needed -->
+           <!-- <div class="container">
+
+              <a href="##" class="brand-logo black-text darken-4">DELEI A.C.</a> -->
+
+              <!-- navbar triggers -->
+              <!-- <a href="##" class="sidenav-trigger" data-target="mobile-links">
+                  <i class="material-icons">menu</i>
+              </a> -->
+
+              <!-- desktop navbar version -->
+              <!-- <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+                  <li class="logged-in" style="display: none;">
+                      <a href="" class="modal-trigger "data-target="modal-account">Home</a>
+                  </li>
+                          
+                              <li class="logged-out">
+                                  <a href="#" class="modal-trigger" data-target="modal-login" id="navbar">Iniciar session</a>
+                              </li>
+
+                              
+                                  <li class="logged-out">
+                                      <a href="#" class="modal-trigger" data-target="modal-signup" id="navbar">Registrarse</a>
+                                  </li> -->
+
+                                      <!-- ///////////////////////// notificaction button /////////////////////////// -->
+                                      <!-- <li><a href="####" class="btn-floating indigo darken-4 z-depth-0 logged-in" id="navbar">
+                                              <i class="material-icons">notifications</i>
+                                          </a></li>
+
+                                      <li><span class="badge white-text pulse pink new ">5</span></li> -->
+
+                                      <!-- Social Media buttons -->
+                                      <!-- <li><a href="####" class="tooltipped btn-floating btn-samll indigo darken-4 " id="navbar"
+                                          data-tooltip="this is where you put the information about a button in this case Instagram ">
+                                          <i class="fab fa-instagram"></i>
+                                          </a></li> -->
+
+                                  <!-- </ul>
+
+      </nav> -->
+
+
+
+
+      <!-- Movil version navbar -->
+      <!-- <ul class="sidenav" id="mobile-links">
+          <li class="logged-in"><a href="####" id="navbar">Home</a></li>
+          <li class="logged-in"><a href="speech.php" id="navbar">Speech</a></li>
+          <li class="logged-in"><a href="solapp.php" id="navbar">Solicitud de apoyo</a></li>
+          <li class="logged-out"><a href="####" id="navbar">Iniciar session</a></li>
+          <li class="logged-out"><a href="####" id="navbar">Registrarse</a></li>
+          <li class="logged-in"><a href="####" id="navbar">Cerrar session</a></li>
+
+          <li><a href="####" class="white darken-4 z-depth-0 logged-in" id="navbar">
+                  <i class="material-icons">notifications</i>
+      </ul> -->
+
+      <!-- container closing div -->
+      <!-- </div>
+      </nav>
+
+  </header> -->
+
+
+  
+<!-- ////////////////////////////////////////////////////// make admin test_1 version //////////////////////////////////////////////////////// -->
+
+
+  <!-- ADMIN ACTIONS -->
+  <form class="center-align admin-actions admin" style="margin: 40px auto; max-width: 300px; display: none;">
+    <input type="email" placeholder="User email" id="admin-email" required />
+    <button class="btn-small yellow darken-2 z-depth-0">Make admin</button>
+  </form>
+
+<!-- /////////////////////////////////////////// client info goes in here SIGN UP MODAL ///////////////////////////////////////////////////// -->
+
+
+  <!-- client info goes in here
+ SIGN UP MODAL -->
+  <div id="modal-signup" class="modal">
+    <div class="modal-content">
+      <h4>Registrarse</h4><br />
+      <form id="signup-form">
+        <div class="input-field">
+          <input type="email" id="signup-email" required />
+          <label for="signup-email">Correo Electrónico</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="signup-password" required />
+          <label for="signup-password">Elegir Contraseña</label>
+        </div>
+
+        <div class="input-field">
+          <input type="password" id="signup-verify" required />
+          <label for="signup-verify">Verificar Contraseña</label>
+        </div>
+
+        <div class="input-field">
+          <input type="text" id="signup-bio" required />
+          <label for="signup-bio">Nombre de usuario</label>
+        </div>
+
+        <button class="btn yellow darken-2 z-depth-0">Registrarse</button>
+        <p class="error pink-text center-align"></p>
+      </form>
+    </div>
+  </div>
+
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+  <!-- LOGIN MODAL -->
+  <div id="modal-login" class="modal">
+    <div class="modal-content">
+      <h4>Iniciar Sesión</h4><br />
+      <form id="login-form">
+        <div class="input-field">
+          <input type="email" id="login-email" required />
+          <label for="login-email">Correo Electrónico</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="login-password" required />
+          <label for="login-password">Su Contraseña</label>
+        </div>
+        <button class="btn yellow darken-2 z-depth-0">Iniciar sesión</button>
+        <p class="error pink-text center-align"></p>
+      </form>
+    </div>
+  </div>
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <!-- ACCOUNT MODAL  -->
+  <div id="modal-account" class="modal">
+    <div class="modal-content center-align">
+      <h4>Detalles de usuario</h4><br />
+      <div class="account-details">
+
+        <!-- Account details popup -->
+        <ul>
+
+          <h5>Folio: </h5>
+          <h5>Numero de expediente: </h5>
+
+
+          <!-- Info de contacto -->
+          <h5>Nombre: </h5>
+          <h5>Appellido: </h5>
+          <h5>Telefono: </h5>
+          <h5>Correo: </h5>
+
+          <!-- Dirrecion -->
+          <h5>Dirrecion 1: </h5>
+          <h5>Dirrecion 2: </h5>
+          <h5>Ciudad: </h5>
+          <h5>Estado: </h5>
+          <h5>Codigo: </h5>
+
+          <!-- Info del caso -->
+          <h5>Materia: </h5>
+          <h5>Asunto: </h5>
+          <h5>Juzgado: </h5>
+          <h5>Tipo de Assesoria: </h5>
+          <h5>Atendido por: </h5>
+        </ul>
+
+
+      </div>
+    </div>
+  </div>
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <!-- tabs section -->
+
+  <body class="container logged-in">
+    <h3 class="logged-in">Dashboard</h3>
+    <div class="row">
+      <div class="col s12 logged-in">
+        <ul class="tabs logged-in">
+          <li class="tab col s3 logged-in"><a href="#inbox">Inbox</a></li>
+          <li class="tab col s3 logged-in"><a class="active" href="#unread">
+              Speech de llamadas</a></li>
+          <li class="tab col s3 logged-in"><a href="#outbox">
+              Outbox (Disabled)</a></li>
+          <li class="tab col s3 logged-in"><a href="#sent">Sent</a></li>
+        </ul>
+      </div>
+
+      <div id="inbox" class="col s12 logged-in">Inbox</div>
+      <div id="unread" class="col s12 logged-in">Unread</div>
+      <div id="outbox" class="col s12 logged-in">Outbox (Disabled)</div>
+      <div id="sent" class="col s12 logged-in">Sent</div>
+    </div>
+  </body>
+
+  <!-- tabs section 2 -->
+
+  <body class="container loggedin">
+   <div class= "row">
+    <div class= "col s12 logged-in">
+      <ul class= "tabs logged-in">
+              <li class="tab col s2 logged-in">
+              <a href="#tab1">tab1</a>
+              </li>
+              <li class="tab col s2 logged-in">
+              <a href="#tab2">tab2</a>
+              </li>
+              <li class="tab col s2 logged-in">
+              <a href="#tab3">tab3</a>
+              </li>
+              <li class="tab col s2 logged-in">
+              <a href="#tab4">tab4</a>
+              </li>
+              <li class="tab col s2 logged-in">
+              <a href="#tab5">tab5</a>
+              </li>
+              <li class="tab col s2 logged-in">
+              <a href="#tab6">tab6</a>
+              </li>
+      </ul>
+
+<div id="tab1" class="col s12 logged-in">tab1</div>
+<div id="tab2" class="col s12 logged-in">tab2</div>
+<div id="tab3" class="col s12 logged-in">tab3</div>
+<div id="tab4" class="col s12 logged-in">tab4</div>
+<div id="tab5" class="col s12 logged-in">tab5</div>
+<div id="tab6" class="col s12 logged-in">tab6</div>
+
+
+    </div>
+   </div> 
+  </body>
+
+
+
+  <!--  //////////////////////////////////////////  photo / grid  //////////////////////////////////////////  -->
+
+
+    <!-- beware the size are: "col L4, L6, L1" NOT!!!!!! "col 14, 16 or 11" -->
+    <!-- <section class="container section" id="photo's">
+
+
+      <div class="row">
+          <div class="col s12 l4 ">
+              <img src="images/2-fase-penal.png" alt="" class="responsive-img materialboxed logged-out">
+          </div>
+          <div class="col s12 l6 offset-l1">
+              <h2 class="indigo-text text-darken-4">Penal</h2>
+              <p>Sed ut leo nunc. Nulla aliquam eros ex, eget semper nisi ornare vel.
+                  Fusce sem massa, auctor et ligula id, tempor ullamcorper purus.
+                  Aliquam vehicula tortor erat, non maximus ipsum ultricies in.
+                  Pellentesque id metus velit. Aliquam cursus tellus ut quam pulvinar semper.
+                  Donec id turpis id diam tincidunt vulputate nec a neque.</p>
+          </div>
+      </div> -->
+
+
+      <!-- ////////// MIDDLE ROW ////////// -->
+      <!-- beware the size are: "col L4, L7, L6, L5" NOT!!!!!! "col 14, 17, 16 or 15" -->
+      <div class="row">
+          <div class="col s12 l4 push-l7 offset-l1">
+              <img src="images/familiar3.png" alt="" class="responsive-img materialboxed">
+          </div>
+          <div class="col s12 l6 pull-l5 right-align offset-l1">
+              <h2 class="indigo-text text-darken-4">Familiar</h2>
+              <p>Sed ut leo nunc. Nulla aliquam eros ex, eget semper nisi ornare vel.
+                  Fusce sem massa, auctor et ligula id, tempor ullamcorper purus.
+                  Aliquam vehicula tortor erat, non maximus ipsum ultricies in.
+                  Pellentesque id metus velit. Aliquam cursus tellus ut quam pulvinar semper.
+                  Donec id turpis id diam tincidunt vulputate nec a neque.</p>
+          </div>
+      </div>
+
+      <!-- beware the size are: "col L4, L6, L1" NOT!!!!!! "col 14, 16 or 11" -->
+      <!-- <div class="row">
+          <div class="col s12 l4 ">
+              <img src="images/const3.png" alt="" class="responsive-img materialboxed">
+          </div>
+          <div class="col s12 l6 offset-l1">
+              <h2 class="indigo-text text-darken-4">Laboral</h2>
+              <p>Sed ut leo nunc. Nulla aliquam eros ex, eget semper nisi ornare vel.
+                  Fusce sem massa, auctor et ligula id, tempor ullamcorper purus.
+                  Aliquam vehicula tortor erat, non maximus ipsum ultricies in.
+                  Pellentesque id metus velit. Aliquam cursus tellus ut quam pulvinar semper.
+                  Donec id turpis id diam tincidunt vulputate nec a neque.</p>
+          </div>
+      </div> -->
+
+
+
+  
+  
+          <!-- ////////// fourth ROW ////////// -->
+          <!-- beware the size are: "col L4, L7, L6, L5" NOT!!!!!! "col 14, 17, 16 or 15" -->
+          <!-- <div class="row">
+              <div class="col s12 l4 push-l7 offset-l1">
+                  <img src="images/corp.png" alt="" class="responsive-img materialboxed">
+              </div>
+              <div class="col s12 l6 pull-l5 right-align offset-l1">
+                  <h2 class="indigo-text text-darken-4">Corporativo</h2>
+                  <p>Sed ut leo nunc. Nulla aliquam eros ex, eget semper nisi ornare vel.
+                      Fusce sem massa, auctor et ligula id, tempor ullamcorper purus.
+                      Aliquam vehicula tortor erat, non maximus ipsum ultricies in.
+                      Pellentesque id metus velit. Aliquam cursus tellus ut quam pulvinar semper.
+                      Donec id turpis id diam tincidunt vulputate nec a neque.</p>
+              </div>
+          </div> -->
+  
+          <!-- beware the size are: "col L4, L6, L1" NOT!!!!!! "col 14, 16 or 11" -->
+          <!-- <div class="row">
+              <div class="col s12 l4 ">
+                  <img src="images/migration3.png" alt="" class="responsive-img materialboxed">
+              </div>
+              <div class="col s12 l6 offset-l1">
+                  <h2 class="indigo-text text-darken-4">Migratorio</h2>
+                  <p>Sed ut leo nunc. Nulla aliquam eros ex, eget semper nisi ornare vel.
+                      Fusce sem massa, auctor et ligula id, tempor ullamcorper purus.
+                      Aliquam vehicula tortor erat, non maximus ipsum ultricies in.
+                      Pellentesque id metus velit. Aliquam cursus tellus ut quam pulvinar semper.
+                      Donec id turpis id diam tincidunt vulputate nec a neque.</p>
+              </div>
+          </div> -->
+
+           <!-- beware the size are: "col L4, L7, L6, L5" NOT!!!!!! "col 14, 17, 16 or 15" -->
+           <!-- <div class="row">
+                  <div class="col s12 l4 push-l7 offset-l1">
+                      <img src="images/old2.png" alt="" class="responsive-img materialboxed">
+                  </div>
+                  <div class="col s12 l6 pull-l5 right-align offset-l1">
+                      <h2 class="indigo-text text-darken-4">Seguro Social</h2>
+                      <p>Sed ut leo nunc. Nulla aliquam eros ex, eget semper nisi ornare vel.
+                          Fusce sem massa, auctor et ligula id, tempor ullamcorper purus.
+                          Aliquam vehicula tortor erat, non maximus ipsum ultricies in.
+                          Pellentesque id metus velit. Aliquam cursus tellus ut quam pulvinar semper.
+                          Donec id turpis id diam tincidunt vulputate nec a neque.</p>
+                  </div>
+              </div>
+
+  </section> -->
+  <!--  //////////////////////////////////////////  parallax  //////////////////////////////////////////  -->
+
+
+  <!-- <div class="parallax-container">
+      <div class="class parallax">
+          <img src="./images/1a-KEYpic-Fritz-Hansen-Series-3300™-by-Arne-Jacobsen-from-Hyundai-office-in-South-Korea.-Photo-Jong-Geun-Lee.1.jpg" class="responsive-img">
+      </div>
+  </div> -->
+
+
+  <!-- //////////////////////////////////////////   services / tabs  //////////////////////////////////////////   -->
+
+
+<!-- 
+  <section class="container section" id="services">
+          <div class="row">
+
+              <div class="col s12 l4">
+                  <h2 class="indigo-text text-darken-4">Nuestra mission....</h2>
+                  <p>
+                      Fusce sem massa, auctor et ligula id, tempor ullamcorper purus.
+                      Aliquam vehicula tortor erat, non maximus ipsum ultricies in.
+                  </p>
+  
+                  <p>
+                      Fusce sem massa, auctor et ligula id, tempor ullamcorper purus.
+                      Aliquam vehicula tortor erat, non maximus ipsum ultricies in.
+                  </p>
+              </div>
+           -->
+     
+  
+                                          tabs
+              <div class="col s12 l6 offset-l2">
+                  <ul class="tabs">
+  
+                          <li class="tab col s6">
+                                  <a href="#photography" class="indigo-text text-darken-4">donaciones</a>
+                              </li>
+  
+                          <li class="tab col s6">
+                              <a href="#editing" class="indigo-text text-darken-4">Delei</a>
+                          </li>
+
+
+                      </ul>
+  
+                  
+  
+                  <!-- tabs Photography content -->
+                  <!-- <div class="col s12" id="photography">
+                      <p class="flow-text indigo-text text-darken-4">Empleos</p>
+                      <p>
+                          Fusce sem massa, auctor et ligula id, tempor ullamcorper purus.
+                          Aliquam vehicula tortor erat, non maximus ipsum ultricies in.
+                      </p>
+                  </div>
+                   -->
+              
+  
+                  <!-- tabs Editing content -->
+                  <!-- <div class="col s12" id="editing">
+                      <p class="flow-text indigo-text text-darken-4">Donaciones</p>
+                      <p>
+                          Fusce sem massa, auctor et ligula id, tempor ullamcorper purus.
+                          Aliquam vehicula tortor erat, non maximus ipsum ultricies in.
+                      </p>
+                  </div> -->
+              
+  
+  
+                       <!-- closing tags -->
+                      <!-- </div>
+                
+      </section> -->
+
+
+
+  <!-- //////////////////////////////////////////   parallax  //////////////////////////////////////////   -->
+
+<!-- 
+  <div class="parallax-container">
+      <div class="class parallax">
+          <img src="images/Boardroom.jpg" class="responsive-img">
+      </div>
+  </div> -->
+
+
+  <!-- //////////////////////////////////////////  contact form  //////////////////////////////////////////   -->
+
+  <!-- <section class="section container" id="contact">
+
+         <div class="row">
+
+
+             <div class="col s12 l5">
+                 <h2 class="indigo-text text-darken-4">Contáctanos</h2>
+                 <p>Ponemos a su dispoción nuestra información de contacto:</p>
+
+                      <h4 class="indigo-text">Direccion  <i class="material-icons prefix">location_on</i></h4>
+                  </p> Padre Mier #1082 colonia centro, Monterrey, N.L.
+                  64000</p>
+
+
+                 <h5 class="indigo-text">Horarios de Atención  <i class="material-icons prefix">access_time</i></h5>
+                 Lunes a Viernes de 8:00 a 19:00 Horas.
+                 </p>
+
+
+
+                 <h5 class="indigo-text">(812)141-7372  <i class="material-icons prefix">call</i></h5>
+                 
+                 <h5 class="indigo-text">desarrollolegal@delei.com  <i class="material-icons prefix">email</i></h5>
+
+
+             </div> -->
+
+             <!-- form section -->
+             <!-- <div class="col s12 l5 offset-l2">
+              <form action="">
+
+                      <div class="card">
+                              <div class="card-body">
+                                  <h3 class="card-title"><u>Google Maps</u></h3>  -->
+      
+                                  <!-- Google maps Api -->
+      
+                                  <!-- <div id="googleMap" style="width:100%;height:400px;"></div> -->
+                                  <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.1440342188534!2d-100.30741255034206!3d25.66651968359991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662be2d2bf89b13%3A0xa6068c6af7da87d2!2sCalle+Padre+Mier+1082%2C+Barrio+Antiguo%2C+Centro%2C+64000+Monterrey%2C+N.L.!5e0!3m2!1sen!2smx!4v1544803420952" 
+                               frameborder="0" style="border:0; width:100%;height:400px;" allowfullscreen></iframe>
+      
+                              </div>
+                      </div>
+
+              </form>
+             </div> -->
+
+             <!-- closing tags -->
+         <!-- </div>
+      </section> -->
+
+
+<!-- //////////////////////////////////////////  Contact form //////////////////////////////////////////   -->
+
+        <!-- Content here -->
+        <!-- <div class="row">
+              <div class="col-md-12 p-6" style="background-color: white ;"> -->
+  
+                  <!-- contact form -->
+  
+                  <!-- <div class="col-12">
+                      <div class="container px-4 py-4 mt-4 mb-4" style="border: darkgrey; border-style: solid; border-width: 2px; border-radius: 15px; width: 90%; margin-bottom: 10px;">
+  
+                          <div class="form-group">
+                              <form class="px-4 py-3"> -->
+  
+  
+                                  <!-- Form header -->
+                                  <!-- <h1 class="display-2 text-left padding-bottom-2 " style="color:#4aaaa5">Contactanos</h1> -->
+                                  <!-- dividing line -->
+                                  <!-- <hr class="my-4" style="height: 2px ;"> -->
+  
+                                  <!-- First Name input -->
+                                  <!-- <div class="form-group">
+                                      <label for="Nombre">Nombre</label>
+                                      <input type="text" class="form-control" id="id_nombre" placeholder="Nombre.." name="nombre" required>
+                                  </div> -->
+  
+                                  <!-- Apellido Paterno input -->
+                                  <!-- <div class="form-group">
+                                      <label for="telefono">Telefono</label>
+                                      <input type="text" class="form-control" id="id_telefono" placeholder="telefono.." name="telefono" required>
+                                  </div> -->
+  
+                                  <!-- Email input -->
+                                  <!-- <div class="form-group">
+                                      <label for="exampleFormControlInput1">Correo Electronico</label>
+                                      <input type="email" class="form-control" id="id_correo" placeholder="nombre@ejemplo.com" name="Correo" required>
+                                  </div> -->
+  
+                                  <!-- Email Subject -->
+                                  <!-- <div class="form-group">
+                                      <label for="exampleFormControlTextarea1">Mensaje</label>
+                                      <textarea class="form-control" id="id_mensaje" placeholder="Escribe aqui tu mensaje.."
+                                      name="mensaje" rows="3" required></textarea> -->
+
+
+                                      
+  
+                                      <!-- Submit button -->
+                                      <!-- <input type="submit" class="mt-4 mb-2" value="Enviar" required>
+                                  </div>
+                              </form>
+                          </div>
+                      </div> -->
+                      <!-- container3 form closing div -->
+                  <!-- </div>
+  
+              </div>
+  
+          </div>
+  
+      </div>
+  
+  
+  
+      </div> -->
+  
+  
+  
+  
+
+
+
+  <!-- //////////////////////////////////////////   footer  //////////////////////////////////////////   -->
+
+
+  <footer class="page-footer grey darken-3">
+      <div class="container">
+          <div class="row">
+
+              <!-- Left column -->
+              <div class="col s12 l6">
+                  <h5>Sobre Nosotros</h5>
+                  <p>
+                          Fusce sem massa, auctor et ligula id, tempor ullamcorper purus.
+                          Aliquam vehicula tortor erat, non maximus ipsum ultricies in.
+                      </p>
+                      <p>
+                              Fusce sem massa, auctor et ligula id, tempor ullamcorper purus.
+                              Aliquam vehicula tortor erat, non maximus ipsum ultricies in.
+                          </p>
+              </div>
+
+              <!-- right column -->
+              <div class="col s12 l4 offset-l2">
+                  <h5>connect</h5>
+                     <ul>
+                         <li><a href="https://www.facebook.com/AcDelei-755848871457743/" class="grey-text text-light-3">Facebook</a></li>
+                         <li><a href="https://twitter.com/AcDelei" class="grey-text text-light-3">Twitter</a></li>
+                         <li><a href="https://www.youtube.com/channel/UCHHvdW4kmj_2uZeFGUck_iQ" class="grey-text text-light-3">YouTube</a></li>
+                         <li><a href="https://www.instagram.com/acdelei/" class="grey-text text-light-3">Instagram</a></li>
+                     </ul>
+
+              </div>
+
+
+              <!-- Closing tags -->
+          </div>
+      </div>
+
+      <div class="footer-copyright grey darken-4">
+
+          <div class="container center-align">&copy;2019 DELEI A.C.</div>
+
+      </div>
+  </footer>
+
+
+
+  <!-- Firebase App -->
+  <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase-app.js"></script>
+  <!-- Firebase Auth -->
+  <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase-auth.js"></script>
+  <!-- Firebase firestore -->
+  <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase-firestore.js"></script>
+  <!-- Firebase functions -->
+  <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase-functions.js"></script>
+
+
+
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCJCXcrNZ7tqIt_CUu1pp8tMwBIJtrW1o8",
+      authDomain: "deleiphone-b0f98.firebaseapp.com",
+      databaseURL: "https://deleiphone-b0f98.firebaseio.com",
+      projectId: "deleiphone-b0f98"
+    };
+
+    firebase.initializeApp(config);
+
+
+    // make auth and firestore references
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+    const functions = firebase.functions();
+
+    // update firestore settings
+    db.settings({ timestampsInSnapshots: true });
+
+    $(document).ready(function(){
+
+// sidenav
+$('.sidenav').sidenav();
+
+
+// offset images
+$('.materialboxed').materialbox();
+
+// Parallax image
+$('.parallax').parallax();
+
+// tabs
+$('.tabs').tabs();
+
+Datepicker
+$('.datepicker').datepicker({
+    // this is an otion you can use in calanders 
+    disableWeekends:true
+});
+
+$('.tooltipped').tooltip();
+
+$('.scrollspy').scrollSpy();
+
+}); 
+
+  </script>
+</body>
+
+</html>
