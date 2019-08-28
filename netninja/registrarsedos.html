@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <!-- bootstrap cdn link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Cuenta</title>
+
+
+    <style>
+
+
+        h1 {
+        font-family: "Times New Roman", Times, serif;
+        color:black;
+        text-shadow: 1px;
+        /* -webkit-text-stroke-width: 1.5px; */
+    /* -webkit-text-stroke-color:black; */
+    }
+    
+     h3 {
+        color: black;
+        
+        text-shadow: 1px;
+    }
+    
+    .logo {
+        font-family: "Times New Roman", Times, serif;
+    }
+    
+    body {
+       
+        background-color: white;
+    }
+    
+    
+    /* image opacity script */
+    /* img {
+        opacity: 0.3;
+        filter: alpha(opacity=50); /* For IE8 and earlier */
+        
+    } */
+    
+    #logo {
+    
+    
+    }
+    
+    .logo {
+        position: relative;
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .logo img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .logo .btn {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: #555;
+        color: white;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+    }
+    
+    .logo .btn:hover {
+        background-color: black;
+    }
+    
+    .button {
+          background-color: #4CAF50;
+          /* Green */
+          border: none;
+          color: white;
+          padding: 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+    
+        .button1 {
+          border-radius: 2px;
+        }
+    
+        .button2 {
+          border-radius: 4px;
+        }
+    
+        .button3 {
+          border-radius: 8px;
+        }
+    
+        .button4 {
+          border-radius: 12px;
+        }
+    
+        .button5 {
+          border-radius: 50%;
+        }
+    
+        /* Dimensions of the icon buttons */
+        .fa {
+          padding: 20px;
+          font-size: 20px;
+          width: 62px;
+          text-align: center;
+          text-decoration: none;
+          margin: 5px 30px;
+        }
+    
+        .fa:hover {
+          opacity: 0.7;
+        }
+    
+        .fa-facebook {
+          background: #3B5998;
+          color: white;
+        }
+    
+        .fa-twitter {
+          background: #55ACEE;
+          color: white;
+        }
+    
+        .fa-google {
+          background: #dd4b39;
+          color: white;
+        }
+    
+        .fa-linkedin {
+          background: #007bb5;
+          color: white;
+        }
+    
+        .fa-youtube {
+          background: #bb0000;
+          color: white;
+        }
+    
+        .fa-instagram {
+          background: #125688;
+          color: white;
+        }
+
+        body{
+  color: #fff;
+  background-color:#f0f0f0;
+  font-family:helvetica;
+  background:url("/Users/txivojuarezlap/Desktop/DELEI/Imagenes/Boardroom.png") #ffffff no-repeat center top;
+}
+        </style>
+
+    <!-- Imagen de arriba 2 -->
+
+    <img src="./Imagenes/topbg.png" alt="Responsive image" style="width: 100%;">
+
+
+</head>
+
+<!-- Content begins -->
+
+<body >
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e5e4e3 ;">
+        <h1 class="navbar-brand font-weight-bold;">Telefono: (812)141-7372</h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <!-- Position of Navbar ml-auto or mr-auto -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+                <!-- dropdown-menu  services-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="services.html" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Servicios
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item">Departamentos</a>
+
+
+                        <!-- dropdown-divider -->
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="laboral.html">Materia Laboral</a>
+                        <a class="dropdown-item" href="familiar.html">Materia Familiar</a>
+                        <a class="dropdown-item" href="ss.html">Materia de Seguridad Social</a>
+                        <a class="dropdown-item" href="penal.html">Materia Penal</a>
+                        <a class="dropdown-item" href="corporativa.html">Materia Corporativa</a>
+                        <a class="dropdown-item" href="migratoria.html">Materia Migratoria</a>
+                    </div>
+                </li>
+
+                <!-- dropdown-menu  Sobre Nosotros -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="equipo.html" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sobre Nosotros
+                    </a>
+                    <div class="dropdown-divider"></div>
+
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item">Sobre Nosotros</a>
+
+
+                        <!-- dropdown-divider -->
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="fotos.html">Galería de fotos</a>
+                        <a class="dropdown-item" href="testimonios.html">Testimonios</a>
+                        <a class="dropdown-item" href="Proxeventos.html">Proximos eventos</a>
+
+
+                    </div>
+                </li>
+
+                <!-- Navbuttons -->
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contactanos</a>
+                </li>
+
+
+
+
+                <!-- dropdown-menu  Registrarse/Iniciar-->
+                <li class="nav-item dropdown">
+
+
+                    <a class="nav-link dropdown-toggle" href="######" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false"><b>Registrarse/Iniciar</b> <span class="caret"></span></a>
+                    <div class="dropdown-divider"></div>
+
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item"></a>
+                        <!-- dropdown-divider -->
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="registrarse.html">Registrarse</a>
+                        <a class="dropdown-item" href="iniciar.html">Iniciar</a>
+
+
+                    </div>
+                </li>
+
+        </div>
+    </nav>
+s
+
+
+
+    <!-- Content here -->
+
+    <div class="container">
+
+
+        <!-- Check this form  -->
+        <body background="./Registration form Page_files/background.jpg" style="opacity:75%" alt="bottles image">
+
+
+            <!-- missing closing </form>  -->
+            <form action="file:///action_page.php">
+
+                <div class="container" style="background-color: transparent">
+
+
+                    <br>
+                    <!-- top of the page title  -->
+                    <h1 class="text-center" style="-webkit-text-stroke-width: .5px;
+                    -webkit-text-stroke-color:black; text-size-adjust: 40 px; color: black;">Forma
+                        de Registro</h1>
+                    <hr>
+
+                    <!-- Registration Form -->
+
+                    <div class="row">
+                        <div class="col-lg-12">
+
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <br>
+                                    <p>Porfavor llenar la forma para registrarse.</p>
+                                </div>
+                                <div class="panel-body">
+
+
+
+                                    <div class="columns text-danger">
+                                        <span class="required-copy">*Requerido</span>
+                                    </div>
+
+
+                                    <!-- might have issues on id="reserve_name" -->
+
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="input-nombre">Nombre</label>
+                                            <input type="text" class="form-control" id="input-nombre" placeholder="Nombre" name="nombre">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="input-apellido">Apellido</label>
+                                            <input type="text" class="form-control" id="input-apellido" placeholder="Apellido" name="apellidoPaterno">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+
+                                        <!-- Email -->
+                                        <div class="form-group col-md-4">
+                                            <label for="Correo-input">Correo</label>
+                                            <input type="email" class="form-control" id="Correo-input" placeholder="nombre@ejemplo.com"
+                                                name="correo" required="">
+                                        </div>
+
+                                        <!-- Password -->
+                                        <div class="form-group col-md-4">
+                                            <label for="password-input">Contraseña</label>
+                                            <input type="password" class="form-control" id="password-input" placeholder="Contraseña"
+                                                name="password" required="">
+                                        </div>
+
+                                        <!-- Password confirmation-->
+                                        <div class="form-group col-md-4">
+                                            <label for="password2-input">Comfirmar Contraseña</label>
+                                            <input type="password" class="form-control" id="password2-input"
+                                                placeholder="Comfirmar Contraseña" name="Password-comfirmation"
+                                                required="">
+                                        </div>
+
+                                    </div>
+
+                                    <!-- Address -->
+                                    <div class="form-group">
+                                        <label for="dirección-input">Dirección</label>
+                                        <input type="text" class="form-control" id="dirección-input" placeholder="1234 calle ave."
+                                            name="dirección" required="">
+                                    </div>
+
+                                    <!-- Address 2 -->
+                                    <div class="form-group">
+                                        <label for="dirección-input">Dirección 2</label>
+                                        <input type="text" class="form-control" id="dirección-input" placeholder="Colonia, piso, interior, etc"
+                                            name="dirección2" required="">
+                                    </div>
+
+                                    <!-- City -->
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="ciudad-input">Ciudad</label>
+                                            <input type="text" class="form-control" id="ciudad-input" placeholder="Ciudad"
+                                                name="ciudad" required="">
+                                        </div>
+
+
+
+                                        <!-- Dropdown estados de México -->
+                                        <div class="form-group col-md-4">
+                                            <label for="estado-input">Estado</label>
+                                            <select id="estado-input" class="form-control" name="estado" required="">
+                                                <option selected="">Seleccionar...</option>
+
+                                                <option value="0">Todo México</option>
+
+                                                <option value="1">Aguascalientes</option>
+
+                                                <option value="2">Baja California</option>
+
+                                                <option value="3">Baja California Sur</option>
+
+                                                <option value="4">Campeche</option>
+
+                                                <option value="5">Coahuila</option>
+
+                                                <option value="6">Colima</option>
+
+                                                <option value="7">Chiapas</option>
+
+                                                <option value="8">Chihuahua</option>
+
+                                                <option value="9">Distrito Federal</option>
+
+                                                <option value="10">Durango</option>
+
+                                                <option value="11">Guanajuato</option>
+
+                                                <option value="12">Guerrero</option>
+
+                                                <option value="13">Hidalgo</option>
+
+                                                <option value="14">Jalisco</option>
+
+                                                <option value="15">México</option>
+
+                                                <option value="16">Michoacán</option>
+
+                                                <option value="17">Morelos</option>
+
+                                                <option value="18">Nayarit</option>
+
+                                                <option value="19">Nuevo León</option>
+
+                                                <option value="20">Oaxaca</option>
+
+                                                <option value="21">Puebla</option>
+
+                                                <option value="22">Querétaro</option>
+
+                                                <option value="23">Quintana Roo</option>
+
+                                                <option value="24">San Luis Potosí</option>
+
+                                                <option value="25">Sinaloa</option>
+
+                                                <option value="26">Sonora</option>
+
+                                                <option value="27">Tabasco</option>
+
+                                                <option value="28">Tamaulipas</option>
+
+                                                <option value="29">Tlaxcala</option>
+
+                                                <option value="30">Veracruz</option>
+
+                                                <option value="31">Yucatán</option>
+
+                                                <option value="32">Zacatecas</option>
+
+
+
+                                            </select>
+                                        </div>
+
+                                        <!-- Zipcode -->
+                                        <div class="form-group col-md-2">
+                                            <label for="código-input">Código postal</label>
+                                            <input type="text" class="form-control" id="código-input" placeholder="Código postal"
+                                                name="codigo" required="">
+                                        </div>
+                                    </div>
+
+
+
+                                    <!--Telefono -->
+
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="telefono-input">Teléfono</label>
+                                                <input type="phone" class="form-control" id="telefono-input" placeholder="Teléfono" name="teléfono">
+                                            </div>
+
+                                            <div class="form-group col-md-6">
+
+                                            </div>
+
+
+                                            <br>
+
+
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <!-- Submit/ back buttons -->
+                                                    <a class="btn btn-primary back" href="./index.html"
+                                                        role="button">back</a>
+
+                                                    <button type="submit" class="btn btn-primary submit" href="./confreg.html"
+                                                        form="form-inline">Submit</button>
+                                                </div>
+                                                <br>
+                                            </div>
+
+                                        </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<br>
+    <!-- Container closing Div -->
+    </div>
+
+    
+
+
+    <!-- Footer -->
+    <footer>
+
+
+        <!-- First row with logo -->
+        <div row>
+            <div class=" col row-4 bg-dark" style="background-color: #e5e4e3 ;">
+                <aside id="themerex-social-widget-3" class="columns1_2 widget-number-1 widgetWrap widget widget_socials">
+                    <div class="widget_inner">
+                        <div class="container">
+
+
+                            <div class="row">
+
+                                <!-- First row -->
+                                <div class="col-4">
+                                    <br>
+                                    <a href="http://delei.com.mx">
+                                        <img src="http://delei.com.mx/wp-content/uploads/2015/02/LogoDeleiWhite.png"
+                                            alt="">
+
+                                    </a>
+                                </div>
+
+                                <!-- Second row text  -->
+                                <div class="col text-white">
+                                    <br>
+
+                                    Somos una firma legal, consultora en materia penal,
+                                    familiar y laboral, especializada en brindar un servicio integral basado en
+                                    principios,
+                                    conocimiento y experiencia profesional, a través de una defensa técnica de calidad,
+                                    enfocado al óptimo desarrollo legal y protección de nuestros clientes.
+                                </div>
+                            </div>
+
+
+
+
+                            <!-- Dividing line -->
+                            <hr class="my-4" style="height: 2px ;">
+
+
+
+                            <div class="row">
+                                <!-- Logos de redes sociales y links -->
+                                <div class="logo_socials socPage col-lg-9">
+
+                                         <!-- Add font awesome icons -->
+                                         <ul>
+                                                <a href="https://www.facebook.com/AcDelei-755848871457743/" class="fa fa-facebook button button5">acebook</a>
+                                                <a href="https://twitter.com/AcDelei" class="fa fa-twitter button button5">Twitter</a>
+                                                <a href="#" class="fa fa-google button button5">oogle</a>
+                                                <a href="#" class="fa fa-linkedin button button5">Linkedin</a>
+                                                <a href="https://www.youtube.com/channel/UCHHvdW4kmj_2uZeFGUck_iQ" class="fa fa-youtube button button5">YouTube</a>
+                                                <a href="https://www.instagram.com/acdelei/" class="fa fa-instagram button button5">Instagram</a>
+                                            </ul>
+                                        </div>
+
+
+                                <!-- Links de empleos y donaciones -->
+                                <ul class>
+                                    <li>
+                                        <h3><a href="contribucion.html" class="text-white">Colaboraciones</a></h3>
+                                    </li>
+                                    <li>
+                                        <h3><a href="empleos.html" class="text-white ">Empleos</a></h3>
+                                    </li>
+                                </ul>
+                            </div>
+                            <br>
+
+
+                            <!-- Copyright footer -->
+                            <div class="row">
+
+                                <div class="col-lg-12 offset-lg-0 p-6">
+                                    <p class="text-center" style="background-color: #454746;color: white;padding-bottom: 20px;padding-top: 20px;">Copyright
+                                        &copy; 2018-Delei</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </aside>
+            </div>
+
+    </footer>
+
+    <br>
+
+    <!-- jQuery -->
+    <script src="./Registration form Page_files/jquery.js"></script>
+
+
+
+    <!-- Script -->
+    <script>
+        // Capture Button Click
+        $("#add-user").on("click", function (event) {
+            // prevent form from trying to submit/refresh the pinputDateOfBirth
+            event.preventDefault();
+
+            // Capture User Inputs and store them into variables
+            var primerNombre = $("#input-nombre").val().trim();
+            var apellidoPaterno = $("#input-apellido").val().trim();
+            var correo = $("#Correo-input").val().trim();
+            var password = $("#password-input").val().trim();
+            var password2 = $("#password2-input").val().trim();
+            var dirección = $("#dirección-input").val().trim();
+            var dirección2 = $("#dirección2-input").val().trim();
+            var ciudad = $("#ciudad-input").val().trim();
+            var estado = $("#estado-input").val().trim();
+            var codigo = $("#codigo-input").val().trim();
+            var telefono = $("#telefono-input").val().trim();
+
+
+            // Console log each of the user inputs to confirm we are receiving them
+            console.log(primerNombre);
+            console.log(apellidoPaterno);
+            console.log(correo);
+            console.log(password);
+            console.log(password2);
+            console.log(dirección);
+            console.log(dirección2);
+            console.log(ciudad);
+            console.log(estado);
+            console.log(codigo);
+            console.log(telefono);
+
+
+            // Output all of the new information into the relevant HTML sections
+            $("#nombre-display").text(primerNombre);
+            $("#apellido-display").text(apellidoPaterno);
+            $("#correo-display").text(correo);
+            $("#password-display").text(password);
+            $("#password2-display").text(password2);
+            $("#dirección-display").text(dirección);
+            $("#dirección2-display").text(dirección2);
+            $("#ciudad-display").text(ciudad);
+            $("#estado-display").text(estado);
+            $("#codigo-display").text(codigo);
+            $("#phone-display").text(telefono);
+
+
+        });
+    </script>
+
+
+
+
+
+    </div>
+    </div>
+    </div>
+    </form>
+</body>
+
+</html>

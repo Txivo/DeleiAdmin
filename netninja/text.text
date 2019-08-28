@@ -1,0 +1,223 @@
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <title>NINJA INDEX</title>
+
+
+    <!-- Custom CSS -->
+    <style>
+        /* desktop image background size */
+        /* header {
+
+            background: url(images/brickoffice3.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 500px;
+        } */
+
+        /* notification badge */
+        nav .badge {
+
+            position: relative;
+            right: 34px;
+
+        }
+
+        /* padding in the section section */
+        .section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+
+        /* Color of bottom tabs */
+        .tabs .indicator{
+            background-color: #1a237e;
+        }
+
+        /* transperancy on the tabs */
+        .tabs .tabs a:focus, .tabs .tabs a:focus.active{
+            background: transparent;
+        } 
+
+        /* mobile devices image background size */
+        @media screen and (max-width:670px) {
+            header {
+                min-height: 500px;
+            }
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+
+    <!-- //////////////////////////////////////////  navbar  //////////////////////////////////////////  -->
+
+    <header>
+
+        <img src="./images/topbg.png" style="width:100%; margin-top: 10px;" />
+        <!-- normal grey navbar  -->
+        <nav class="nav-wrapper grey darken-2">
+
+            <!-- transperant navbar -->
+            <!-- <nav class="nav-wrapper transparent"> -->
+
+            <!-- container below if needed -->
+            <div class="container">
+
+                <a href="##" class="brand-logo black-text darken-4">DELEI A.C.</a>
+
+                <!-- navbar triggers -->
+                <a href="##" class="sidenav-trigger" data-target="mobile-links">
+                    <i class="material-icons">menu</i>
+                </a>
+
+                <!-- desktop navbar version -->
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+                    <li class="logged-in" style="display: none;">
+                        <a href="" class="modal-trigger "data-target="modal-home">Home</a>
+                    </li>
+
+                    
+                        <li class="logged-in">
+                            <a href="speech.php" id="navbar">Speech</a>
+                        </li>
+
+                        
+                            <li class="logged-in">
+                                <a href="solapp.php" id="solapp">Solicitud de apoyo</a>
+                            </li>
+
+                            
+                                <li class="logged-out">
+                                    <a href="####" id="navbar">Iniciar session</a>
+                                </li>
+
+                                
+                                    <li class="logged-out">
+                                        <a href="####" id="navbar">Registrarse</a>
+                                    </li>
+
+                                    
+                                        <li class="logged-in">
+                                            <a href="####" id="navbar">Cerrar session</a>
+                                        </li>
+
+
+
+           
+                                        <!-- ///////////////////////// notificaction button /////////////////////////// -->
+                                        <!-- <li><a href="####" class="btn-floating indigo darken-4 z-depth-0 logged-in" id="navbar">
+                                                <i class="material-icons">notifications</i>
+                                            </a></li>
+
+                                        <li><span class="badge white-text pulse pink new ">5</span></li> -->
+
+                                        <!-- Social Media buttons -->
+                                        <!-- <li><a href="####" class="tooltipped btn-floating btn-samll indigo darken-4 " id="navbar"
+                                            data-tooltip="this is where you put the information about a button in this case Instagram ">
+                                            <i class="fab fa-instagram"></i>
+                                            </a></li> -->
+
+                                    </ul>
+
+                                    
+
+        </nav>
+
+
+        <!-- <div class="parallax-container">
+                <div class="class parallax">
+                    <img src="images/brickoffice3.png" class="responsive-img">
+                </div>
+            </div> -->
+
+
+        <!-- Movil version navbar -->
+        <ul class="sidenav" id="mobile-links">
+            <li class="logged-in"><a href="####" id="navbar">Home</a></li>
+            <li class="logged-in"><a href="speech.html" id="navbar">Speech</a></li>
+            <li class="logged-in"><a href="solapp.html" id="navbar">Solicitud de apoyo</a></li>
+            <li class="logged-out"><a href="####" id="navbar">Iniciar session</a></li>
+            <li class="logged-out"><a href="####" id="navbar">Registrarse</a></li>
+            <li class="logged-in"><a href="####" id="navbar">Cerrar session</a></li>
+
+            <li><a href="####" class="white darken-4 z-depth-0 logged-in" id="navbar">
+                    <i class="material-icons">notifications</i>
+        </ul>
+
+        <!-- container closing div -->
+        </div>
+        </nav>
+
+    </header>
+
+    <div class="container">
+
+        <h2>Collections</h2>
+        <ul class="Collection with-header">
+        <li class="Collection-header"><h4>Clientes</h4></li>
+
+            <li class="Collection-item avatar">
+                <i class="material-icons circle blue">person</i>
+                <span class="title">Carlos</span>
+                <p class="grey-text">Folio: </p>
+                <p class="grey-text">Expediente:</p>
+                
+
+                    <a href="" class="secondary-content">
+                    <p class="grey-text">Timestamp</p> 
+                    <i class="material-icons blue-text">email</i> 
+                    </a>
+                    
+            </li>
+
+            <li class="Collection-item">Jose</li>
+            <li class="Collection-item">Pedro</li>
+            <li class="Collection-item">Miguel</li>
+            <li class="Collection-item">pablo</li>
+
+        </ul>
+
+</div>
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+<li class="Collection-item avatar">
+        <i class="material-icons circle blue">person</i>
+        <?php while ($row = $result->fetch_assoc()){ ?>
+        <span class="title"><?php echo $row["nombre","apellidop"] ?></span>
+        <p class="grey-text">Folio: <?php echo $row["folio"] ?></p>
+        <p class="grey-text">Expediente: <?php echo $row["expediente"] ?></p>
+        
+
+            <a href="" class="secondary-content">
+            <p class="grey-text">Timestamp</p> 
+            <i class="material-icons blue-text">email</i> 
+            </a>
+            <?php } ?> 
+    </li>
